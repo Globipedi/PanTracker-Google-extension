@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "PanTracker",
+  "version": "1.0",
+  "description": "dünya genelindeki deprem aktivitelerini anlık olarak gözlemleyebilir, deprem riski altındaki bölgeleri takip edebilirsiniz.",
+
+  "icons": {
+    "16": "images/sq.png",
+    "48": "images/pan48.png",
+    "128": "images/pan128.png"
+  },
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/pan16.svg",
+      "48": "images/pan48.svg",
+      "128": "images/pan128.svg"
+    },
+    "default_title": "PanTracker"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "jscript.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "images/win16x16.png",
+        "images/win48x48.png",
+        "images/win127x127.png"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

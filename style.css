@@ -1,0 +1,19 @@
+html{
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+    background-color:#2678c7;
+}
+body{
+    width:max-content;
+    height: max-content;
+    padding: 0%;
+    margin: 0%;
+}
+#header{
+    display: grid;
+}
+#ida{
+    position: fixed; top: 45px; left: 40px;
+}
